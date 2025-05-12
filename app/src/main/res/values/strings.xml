@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppliMobile</string>
+    <string name="consulter_les_fiches_de_frais">Consulter fiche frais </string>
+    <string name="d_connexion" />
+    <string name="Listes_utilisateurs">Listes Utilisateurs </string>
+    <string name="d_connexion2" />
+    <string name="AjoutUtilisateurs">Ajouter un Utilisateur </string>
+    <string name="montant">Montant</string>
+    <string name="enregistrer_les_modifications">Enregistrer les modification</string>
+    <string name="libell">libelle\n</string>
+    <string name="date">date\n</string>
+    <string name="frais_forfaitis_s">Frais forfaitisés\n\n</string>
+    <string name="kilometre_km">km</string>
+    <string name="nuit_e_h_tel_80_00_unit">nuit hôtels\n</string>
+    <string name="repas_restaurant_25_00_unit">Repas Restaurant</string>
+    <string name="frais_hors_forfait">Hors forfaits\n</string>
+    <string name="modifier_fiche_de_frais">Modifier fiche frais\n</string>
+    <string name="refuser">Refuser\n</string>
+    <string name="rembourser">Rembourser\n</string>
+    <string name="fiches_de_frais_par_visiteur">Fiches Frais Par visiteur\n</string>
+</resources>

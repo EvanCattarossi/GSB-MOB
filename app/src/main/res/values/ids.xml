@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scrollView" type="id" />
+    <item name="tableFraisForfait" type="id" />
+    <item name="tableFraisHorsForfait" type="id" />
+</resources>

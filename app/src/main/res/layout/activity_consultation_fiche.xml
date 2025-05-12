@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GSB"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#2E5AAC"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consultation Fiche Frais"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiche de Frais du 2025-02"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Frais Forfaitisés -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Forfaitisés"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView android:text="Type de Frais" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Quantité" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Montant Unitaire" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Total" android:textStyle="bold" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="KM" android:padding="8dp" />
+                <TextView android:text="500" android:padding="8dp" />
+                <TextView android:text="0,46 €" android:padding="8dp" />
+                <TextView android:text="230,00 €" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Nuitée" android:padding="8dp" />
+                <TextView android:text="7" android:padding="8dp" />
+                <TextView android:text="80,00 €" android:padding="8dp" />
+                <TextView android:text="560,00 €" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="REP" android:padding="8dp" />
+                <TextView android:text="9" android:padding="8dp" />
+                <TextView android:text="25,00 €" android:padding="8dp" />
+                <TextView android:text="225,00 €" android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Frais Hors Forfait -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Hors Forfait"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView android:text="Date" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Libellé" android:textStyle="bold" android:padding="8dp" />
+                <TextView android:text="Montant" android:textStyle="bold" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="2025-02-03" android:padding="8dp" />
+                <TextView android:text="Conférence" android:padding="8dp" />
+                <TextView android:text="110,00 €" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="2025-02-08" android:padding="8dp" />
+                <TextView android:text="déjeuner pro" android:padding="8dp" />
+                <TextView android:text="24,00 €" android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

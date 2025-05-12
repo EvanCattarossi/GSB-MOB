@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GSB"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#2E5AAC"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galaxy Swiss Bourdin"
+            android:textSize="16sp"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes Fiches de Frais"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Table Header -->
+        <TableLayout
+            android:id="@+id/tableLayoutFiches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+
+        <TableRow>
+                <TextView
+                    android:text="Mois"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:text="Montant Validé"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:text="État"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <!-- Rows -->
+            <TableRow>
+                <TextView android:text="02/2024" android:padding="8dp" />
+                <TextView android:text="1.130,00 €" android:padding="8dp" />
+                <TextView android:text="Consulter >" android:textColor="#2E5AAC" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="01/2024" android:padding="8dp" />
+                <TextView android:text="944,00 €" android:padding="8dp" />
+                <TextView android:text="Consulter >" android:textColor="#2E5AAC" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="12/2023" android:padding="8dp" />
+                <TextView android:text="0,00 €" android:padding="8dp" />
+                <TextView android:text="Consulter >" android:textColor="#2E5AAC" android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Refusée" android:padding="8dp" />
+                <TextView android:text="Refusée" android:padding="8dp" />
+                <TextView android:text="Consulter >" android:textColor="#2E5AAC" android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

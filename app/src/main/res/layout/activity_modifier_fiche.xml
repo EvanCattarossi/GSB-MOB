@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Titre principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier Fiche de Frais"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- FRAIS FORFAITISÉS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Forfaitisés"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView android:text="Type de Frais" android:textStyle="bold" android:padding="8dp"/>
+                <TextView android:text="Quantité" android:textStyle="bold" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="KM" android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="500"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="NL" android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editNL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="7"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="REP" android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editREP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="8"
+                    android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- FRAIS HORS FORFAIT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Hors Forfait"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView android:text="Date" android:textStyle="bold" android:padding="8dp"/>
+                <TextView android:text="Libellé" android:textStyle="bold" android:padding="8dp"/>
+                <TextView android:text="Montant" android:textStyle="bold" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/02/2024"
+                    android:inputType="date"
+                    android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editLibelle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conférence"
+                    android:inputType="text"
+                    android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editMontant1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="110,00"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editLibelle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="déjeuner pro"
+                    android:inputType="text"
+                    android:padding="8dp"/>
+                <EditText
+                    android:id="@+id/editMontant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25,80"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Bouton Enregistrer -->
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer les modifications"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2E5AAC"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

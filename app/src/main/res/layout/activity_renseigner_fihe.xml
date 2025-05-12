@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renseigner Fiche de Frais"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Date Picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisir la date de fiche de frais"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="jj mm / aaaa"
+            android:inputType="date"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Frais Forfaitisés -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Forfaitisés"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kilométrage (KM)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nuitée Hôtel (80,00 € / unité)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editRepas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repas Restaurant (25,00 € / unité)"
+            android:inputType="number"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Frais Hors Forfait -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais Hors Forfait"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editHorsForfaitDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="date"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editHorsForfaitLibelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Libellé"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editHorsForfaitMontant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Montant (€)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnAjouterHorsForfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un frais hors forfait"
+            android:backgroundTint="#2E5AAC"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

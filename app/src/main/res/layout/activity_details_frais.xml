@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="GSB"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0D2B5C"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="Consultation Fiche Frais\nFiche de Frais du 02/2025"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView android:text="Frais Forfaitisés"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView android:text="KM : 500 x 0,62 € = 310,00 €" />
+        <TextView android:text="Nuitée : 7 x 80,00 € = 560,00 €" />
+        <TextView android:text="Repas : 9 x 25,00 € = 225,00 €"
+            android:layout_marginBottom="16dp" />
+
+        <TextView android:text="Frais Hors Forfait"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView android:text="2025-02-03 | Conférence | 110,00 €" />
+        <TextView android:text="2025-02-08 | Déjeuner pro | 24,00 €"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnModifierFiche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier cette fiche"
+            android:backgroundTint="#0D4DB5"
+            android:textColor="#FFFFFF"
+            android:padding="14dp" />
+    </LinearLayout>
+</ScrollView>
